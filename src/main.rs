@@ -7,6 +7,9 @@ fn main() {
 #[allow(non_snake_case)]
 fn App(cx: Scope) -> Element {
   cx.render(rsx! {
-    "Hello World!"
+    div {
+      class: "text-3xl font-bold text-blue-700",
+      "Hello World!"
+    }
   })
 }
